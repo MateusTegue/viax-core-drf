@@ -1,8 +1,25 @@
-## comandos necesarios para correr el proyecto
-# docker-compose up --build 
-# docker-compose up
-# docker exec -it core /bin/bash
+## Comandos necesarios para correr el proyecto
 
-# docker-compose dowm               | sirve para remover las imagenes
-# docket-compose build --no-cache   | sirve para construir desde cero sin cache 
-# docker-compose up
+### Iniciar el proyecto
+```bash
+docker-compose up --build
+# o simplemente
+docker-compose up
+```
+
+### Acceder al contenedor
+```bash
+docker exec -it core /bin/bash
+```
+
+### Comandos útiles
+```bash
+# Remover las imágenes
+docker-compose down
+
+# Construir desde cero sin caché
+docker-compose build --no-cache
+
+# Iniciar después de reconstruir
+docker-compose up
+```
