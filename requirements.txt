@@ -5,6 +5,7 @@ django-environ==0.9.0
 pillow==12.1.0
 django-ckeditor-5==0.2.19
 
+gunicorn==22.0.0
 uvicorn==0.40.0
 
 channels==4.1.0
