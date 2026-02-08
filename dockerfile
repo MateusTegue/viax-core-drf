@@ -17,4 +17,5 @@ RUN pip install -r /app/requirements.txt
 COPY . /app
 
 # start the SSH tunnel
-CMD python manage.py runserver 0.0.0:8000
+#CMD python manage.py runserver 0.0.0:8000
+CMD python manage.py migrate --noinput && gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
